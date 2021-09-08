@@ -15,7 +15,7 @@ def check_row(board, n):
             x_counter += 1
             if x_counter == 2:
                 print("x's won")
-        #Michae
+        #Micha
 
 print("enter x and y coordinates (1 - 3)")
 while is_still_playing:
