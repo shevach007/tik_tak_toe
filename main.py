@@ -10,12 +10,12 @@ def check_row(board, n):
     x_counter = 0
     o_counter = 0
     for i in range(2):
-        board[n][i]
+        board[n][i]!
         if board[n][i] == 'x':
             x_counter += 1
             if x_counter == 2:
                 print("x's won")
-
+        #Michael
 
 print("enter x and y coordinates (1 - 3)")
 while is_still_playing:
