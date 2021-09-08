@@ -27,13 +27,7 @@ while is_still_playing:
         print("it's x's turn")
     else:
         print("it's o's turn")
-    move_x = int(input("x coordinate: >")) - 1
-    move_y = int(input("y coordinate: >")) - 1
-    if board[move_y][move_x] != "_":
-        print("spot already taken")
-        is_valid_move = False
-    else:
-        is_valid_move = True
+        
     while not is_valid_move:
         move_x = int(input("x coordinate: >")) - 1
         move_y = int(input("y coordinate: >")) - 1
@@ -48,6 +42,8 @@ while is_still_playing:
     else:
         board[move_y][move_x] = "o"
         is_x_turn = True
+    
+    is_valid_move = False
     for n in range(2):
         check_row(board, n)
 
